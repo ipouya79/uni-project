@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .max-w-small {
+    max-width: 10rem;
+  }
+  .ml-30 {
+    margin-left: 15rem;
+  }
+  .account-nav-width {
+    width: 15rem;
+  }
+  .custom-gradient {
+    background: linear-gradient(
+      110deg,
+      theme("colors.lightGrad"),
+      theme("colors.darkGrad")
+    );
+    @apply text-white w-full;
+  }
+}
+
+@font-face {
+  font-family: "BYekan";
+  src: url("./assets/fonts/BYekan+.ttf");
+}
+
+body {
+  font-family: "BYekan", sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.yekan-light{
+font-weight: 400;
+}
+
+
+
+.rtl-direction{
+direction: rtl;
+}
+.ltr-direction{
+direction: ltr;
+}
+
+
+h3{
+  color: #131b1f;
+}
+.pricing-main{
+  color: #131b1f;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+textarea,
+select {
+  @apply w-full border my-1 py-2 px-3 rounded-2xl;
+  ;
+}
+
+input::placeholder , select , textarea::placeholder{
+  text-align:right;
+}
+
+input[type="text"]::placeholder{
+  text-align: right !important;
+}
+
+input[type="text"]{
+  text-align: right !important;
+}
+#loginPassword , #loginEmail ,#registerName , #registerEmail , #registerPassword{
+  text-align: left !important;
+
+}
+
+#loginPassword::placeholder , #loginEmail::placeholder ,#registerName::placeholder , #registerEmail::placeholder , #registerPassword::placeholder{
+  text-align: left !important;
+
+}  
+
+
+
+textarea {
+  direction: rtl;
+  text-align: right;
+  height: 140px;
+}
+button {
+  @apply bg-lightPrimary text-white px-2;
+}
+button.primary {
+  @apply bg-primary p-2 w-full text-white rounded-2xl;
+}
+button.transparent {
+  @apply absolute text-white bg-black p-2 bg-opacity-50 rounded-2xl;
+}
+div.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+}
+div.outer {
+}
+div.min-size {
+  min-height: 10rem;
+  min-width: 10rem;
+}
+
+.title h1{
+  font-size: 18px;
+  font-weight: 700;
+  color: #131b1f;
+  margin: 0;
+}
+.nav-icon{
+  width:24px;
+  height: 24px;
+  cursor: pointer;
+}
+#city-search{
+  outline: none !important;
+  text-align: right;
+}
+.exit-responsive{
+  display: none;
+}
+
+@media only screen and (max-width:480px){
+  .inner-mobile{
+    margin: 0 !important;
+  }
+  .f-d-col{
+display: flex !important;
+flex-direction: column !important;
+
+  }
+.p-hide-text{
+  display: none;
+}
+.exit-responsive{
+  display: block;
+}
+#adminPanelFlex{
+  width: 70%;
+  margin-right: 140px;
+}
+.lg-custom-text{
+  font-size: 13px;
+}
+.sm-custom-text{
+  font-size: 11px;
+}
+.custom-right{
+  text-align: right;
+}
+}
+
+
+
